@@ -1,0 +1,508 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/device/device",
+			"style": {
+				"navigationBarTitleText": "设备",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mall/mall",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/waterIntaking/waterIntaking",
+			"style": {
+				"navigationBarTitleText": "取水",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "subpackageA/pages",
+		"name": "subpackageA",
+		"pages": [{
+				"path": "my/enrollment/enrollment",
+				"style": {
+					"navigationBarTitleText": "注册",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/retrievePassword/retrievePassword",
+				"style": {
+					"navigationBarTitleText": "忘记密码",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "home/detailsList/detailsList",
+				"style": {
+					"navigationBarTitleText": "详情列表",
+					"navigationStyle": "custom"
+				}
+			},
+
+			{
+				"path": "home/details/details",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "device/increaseDevice/increaseDevice",
+				"style": {
+					"navigationBarTitleText": "添加设备",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "device/devicedetails/devicedetails",
+				"style": {
+					"navigationBarTitleText": "设备详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "device/salesService/salesService",
+				"style": {
+					"navigationBarTitleText": "申请售后",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "device/myAddress/myAddress",
+				"style": {
+					"navigationBarTitleText": "地址管理",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "device/recharge/recharge",
+				"style": {
+					"navigationBarTitleText": "充值",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "waterIntaking/packageWaterIntake/packageWaterIntake",
+				"style": {
+					"navigationBarTitleText": "取水详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "waterIntaking/takeTheBag/takeTheBag",
+				"style": {
+					"navigationBarTitleText": "取带",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "waterIntaking/paymentSuccess/paymentSuccess",
+				"style": {
+					"navigationBarTitleText": "支付成功",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/personalCenter/personalCenter",
+				"style": {
+					"navigationBarTitleText": "个人中心",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/orderForGoods/orderForGoods",
+				"style": {
+					"navigationBarTitleText": "全部订单",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/viewLogistics/viewLogistics",
+				"style": {
+					"navigationBarTitleText": "物流",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "mall/ConfirmOrderPlacement/ConfirmOrderPlacement",
+				"style": {
+					"navigationBarTitleText": "确认下单",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "mall/orderDetails/orderDetails",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "mall/address/address",
+				"style": {
+					"navigationBarTitleText": "添加收货地址",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/requestRefund/requestRefund",
+				"style": {
+					"navigationBarTitleText": "申请退款",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/xxxmoney/xxxmoney",
+				"style": {
+					"navigationBarTitleText": "待收货",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/refundDetails/refundDetails",
+				"style": {
+					"navigationBarTitleText": "退款详情",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/myDevice/myDevice",
+				"style": {
+					"navigationBarTitleText": "我的设备",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/myEarnings/myEarnings",
+				"style": {
+					"navigationBarTitleText": "我的收益",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/statistics/statistics",
+				"style": {
+					"navigationBarTitleText": "统计",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/myTeam/myTeam",
+				"style": {
+					"navigationBarTitleText": "我的团队",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/myWithdrawal/myWithdrawal",
+				"style": {
+					"navigationBarTitleText": "我的提现",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/myRecords/myRecords",
+				"style": {
+					"navigationBarTitleText": "充值记录",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/management/management",
+				"style": {
+					"navigationBarTitleText": "银行卡管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/invoice/invoice",
+				"style": {
+					"navigationBarTitleText": "发票管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/invoiceDetails/invoiceDetails",
+				"style": {
+					"navigationBarTitleText": "发票详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/myService/myService",
+				"style": {
+					"navigationBarTitleText": "我的售后",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/afterSalesDetails/afterSalesDetails",
+				"style": {
+					"navigationBarTitleText": "售后详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/MyDrinkingWater/MyDrinkingWater",
+				"style": {
+					"navigationBarTitleText": "我的饮水",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/lnviteFriends/lnviteFriends",
+				"style": {
+					"navigationBarTitleText": "邀请好友",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/lnviteFriends/faceQRScanning",
+				"style": {
+					"navigationBarTitleText": "面对面扫码",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/feedback/feedback",
+				"style": {
+					"navigationBarTitleText": "意见反馈",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/customerServiceCenter/customerServiceCenter",
+				"style": {
+					"navigationBarTitleText": "客服中心",
+					"navigationBarBackgroundColor": "#3099F2",
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "my/personFile/personFile",
+				"style": {
+					"navigationBarTitleText": "一人一档",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/contractManagement/contractManagement",
+				"style": {
+					"navigationBarTitleText": "合同管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/contractManagement/contractDetails",
+				"style": {
+					"navigationBarTitleText": "合同信息",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/contractManagement/electronicSignature",
+				"style": {
+					"navigationBarTitleText": "电子签名",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/contractManagement/reviewRejection",
+				"style": {
+					"navigationBarTitleText": "审核驳回",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/waterQualityMonitoring/waterQualityMonitoring",
+				"style": {
+					"navigationBarTitleText": "水质监控",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/applyForInvoice/applyForInvoice",
+				"style": {
+					"navigationBarTitleText": "申请发票",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/balance/balance",
+				"style": {
+					"navigationBarTitleText": "余额",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/withdrawal/withdrawal",
+				"style": {
+					"navigationBarTitleText": "提现",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/addBankCard/addBankCard",
+				"style": {
+					"navigationBarTitleText": "添加银行卡",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/myPoints/myPoints",
+				"style": {
+					"navigationBarTitleText": "我的积分",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/pointsDetails/pointsDetails",
+				"style": {
+					"navigationBarTitleText": "积分明细",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/coupon/coupon",
+				"style": {
+					"navigationBarTitleText": "优惠劵",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "mall/productDetails/productDetails",
+				"style": {
+					"navigationBarTitleText": "商品详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "mall/cart/cart",
+				"style": {
+					"navigationBarTitleText": "购物车",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "device/devicedetails/increaseDevice",
+				"style": {
+					"navigationBarTitleText": "滤芯复位",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "my/contractManagement/contractData",
+				"style": {
+					"navigationBarTitleText": "合同详情",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path": "my/enrollment/agreement",
+				"style": {
+					"navigationBarTitleText": "使用协议",
+					"navigationBarBackgroundColor": "#FFF"
+				}
+			},
+			{
+				"path" : "productionBinding/productionBinding",
+				"style" : 
+				{
+					"navigationBarTitleText" : "生产绑定"
+				}
+			},
+			{
+				"path" : "prdouctQr/prdouctQr",
+				"style" : 
+				{
+					"navigationBarTitleText" : "生成二维码"
+				}
+			}
+		]
+	}],
+	//预加载分包
+	"preloadRule": {
+		"pages/home/home": {
+			"network": "all",
+			"packages": [
+				"subpackageA"
+			]
+		}
+	},
+	"tabBar": {
+		"selectedColor": "#007AFF",
+		"fontSize": "20rpx",
+		"color": "#AFB1B2",
+		"list": [{
+				"iconPath": "static/image/shouye.png",
+				"selectedIconPath": "static/image/selectedshouye.png",
+				"pagePath": "pages/home/home",
+				"text": "首页"
+			},
+			{
+				"iconPath": "static/image/shebei.png",
+				"selectedIconPath": "static/image/selectshebei.png",
+				"pagePath": "pages/device/device",
+				"text": "设备"
+			},
+			{
+				"iconPath": "static/image/shangcheng.png",
+				"selectedIconPath": "static/image/selectedshangcheng.png",
+				"pagePath": "pages/mall/mall",
+				"text": "商城"
+			},
+			// {
+			// 	"iconPath": "static/image/qushui.png",
+			// 	"selectedIconPath": "static/image/selectqushui.png",
+			// 	"pagePath": "pages/waterIntaking/waterIntaking",
+			// 	"text": "取水"
+			// },
+			{
+				"iconPath": "static/image/wode.png",
+				"selectedIconPath": "static/image/selectedwode.png",
+				"pagePath": "pages/my/my",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

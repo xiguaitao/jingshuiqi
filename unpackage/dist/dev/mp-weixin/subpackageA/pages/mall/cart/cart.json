@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "购物车",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "u-checkbox-group": "/uni_modules/uview-ui/components/u-checkbox-group/u-checkbox-group",
+    "u-transition": "/uni_modules/uview-ui/components/u-transition/u-transition",
+    "u-checkbox": "/uni_modules/uview-ui/components/u-checkbox/u-checkbox",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "cart-list": "/subpackageA/pages/mall/cart/cartList"
+  }
+}

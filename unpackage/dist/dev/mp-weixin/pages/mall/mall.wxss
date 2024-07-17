@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content {
+  min-height: 100vh;
+  background: #F4F5F6;
+  overflow: auto;
+  position: relative;
+}
+.content .swiper {
+  height: 422rpx;
+  border-radius: 0rpx 0rpx 0rpx 0rpx;
+  box-sizing: border-box;
+}
+.content .swiper .swiper-box {
+  height: 422rpx;
+}
+.content .swiper .swiper-img {
+  display: block;
+  width: 100%;
+  height: 422rpx;
+  text-align: center;
+}
+.content .swiper .swiper-img image {
+  width: 100%;
+  height: 100%;
+}
+.scroll-view_H {
+  white-space: nowrap;
+  width: 100%;
+}
+.scrollView {
+  padding: 0rpx 30rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.scrollView .scroll-list {
+  display: flex;
+  align-items: center;
+}
+.scrollView .scroll-list .scroll-view-item_H {
+  padding: 5rpx 10rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #E1EDFA;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  border: 2rpx solid #2590FA;
+  margin-right: 16rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #2590FA;
+}
+.scrollView .scroll-list .scroll-view-item_H image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 2.5rpx;
+  vertical-align: text-bottom;
+}
+.scrollView .scroll-list .scroll-view-item_N {
+  padding: 5rpx 10rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #E4E5E6;
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  margin-right: 16rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #2E3033;
+}
+.scrollView .scroll-list .scroll-view-item_N image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 2.5rpx;
+  vertical-align: text-bottom;
+}
+.commodity {
+  width: 690rpx;
+  margin: 32rpx auto;
+}
+.commodity .corten-list .corten {
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+  margin-top: 24rpx;
+}
+.commodity .corten-list .corten .image {
+  width: 232rpx;
+  height: 232rpx;
+  border-radius: 12rpx 12rpx 12rpx 12rpx;
+}
+.commodity .corten-list .corten .text-water {
+  margin-left: 16rpx;
+}
+.commodity .corten-list .corten .text-water .textwater {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #2E3033;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.commodity .corten-list .corten .text-water .checkTheNumber {
+  width: 350rpx;
+  font-size: 24rpx;
+  color: #616366;
+  margin-top: 16rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.commodity .corten-list .corten .text-water .checkTheNumber .water-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.commodity .corten-list .corten .text-water .checkTheNumber .water-number .number {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #2E3033;
+}
+.commodity .corten-list .corten .text-water .checkTheNumber .water-number .waterThe {
+  font-size: 24rpx;
+  color: #616366;
+}
+.commodity .corten-list .corten .text-water .checkTheNumber .lineView {
+  width: 2rpx;
+  height: 48rpx;
+  background-color: #E4E5E6;
+  margin: 0 48rpx;
+}
+.commodity .corten-list .corten .text-water .money {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+}
+.commodity .corten-list .corten .text-water .money .two {
+  font-size: 36rpx;
+  color: #FA6B05;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commodity .corten-list .corten .text-water .money .two .moneyIcon {
+  font-size: 28rpx;
+}
+.commodity .corten-list .corten .text-water .money .two .moneyMonth {
+  font-size: 24rpx;
+  color: #616366;
+  font-weight: 400;
+}
+.commodity .corten-list .corten .text-water .money .three {
+  margin-left: 16rpx;
+  font-size: 24rpx;
+  color: #B1B2B2;
+  text-decoration: line-through;
+}
+.commodity .corten-list .corten .text-water .service {
+  margin-top: 16rpx;
+  font-size: 20rpx;
+  color: #B1B2B2;
+  margin-top: 8rpx;
+}
+.commodity .corten-list .corten:first-child {
+  margin-top: 0;
+}
+.crown {
+  position: fixed;
+  right: 32rpx;
+  top: 85%;
+}
+.crown image {
+  width: 88rpx;
+  height: 88rpx;
+}
+.wuche {
+  border-radius: 50%;
+  position: fixed;
+  right: 32rpx;
+  top: 78%;
+  width: 96rpx;
+  height: 96rpx;
+}
+.wuche image {
+  width: 100%;
+  height: 100%;
+}
+.wuche .hzs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

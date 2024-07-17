@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "优惠劵",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "subsection": "/components/subsection/subsection",
+    "u-transition": "/uni_modules/uview-ui/components/u-transition/u-transition",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

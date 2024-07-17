@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "合同管理",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "subsection": "/components/subsection/subsection",
+    "u-transition": "/uni_modules/uview-ui/components/u-transition/u-transition",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore",
+    "device-list": "/subpackageA/pages/my/contractManagement/components/deviceList"
+  }
+}

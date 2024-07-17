@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "生成二维码",
+  "usingComponents": {
+    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x"
+  }
+}

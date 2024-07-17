@@ -1,0 +1,131 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/device/device",
+    "pages/mall/mall",
+    "pages/waterIntaking/waterIntaking",
+    "pages/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "subpackageA/pages",
+      "pages": [
+        "my/enrollment/enrollment",
+        "my/retrievePassword/retrievePassword",
+        "home/detailsList/detailsList",
+        "home/details/details",
+        "device/increaseDevice/increaseDevice",
+        "device/devicedetails/devicedetails",
+        "device/salesService/salesService",
+        "device/myAddress/myAddress",
+        "device/recharge/recharge",
+        "waterIntaking/packageWaterIntake/packageWaterIntake",
+        "waterIntaking/takeTheBag/takeTheBag",
+        "waterIntaking/paymentSuccess/paymentSuccess",
+        "my/personalCenter/personalCenter",
+        "my/orderForGoods/orderForGoods",
+        "my/viewLogistics/viewLogistics",
+        "mall/ConfirmOrderPlacement/ConfirmOrderPlacement",
+        "mall/orderDetails/orderDetails",
+        "mall/address/address",
+        "my/requestRefund/requestRefund",
+        "my/xxxmoney/xxxmoney",
+        "my/refundDetails/refundDetails",
+        "my/myDevice/myDevice",
+        "my/myEarnings/myEarnings",
+        "my/statistics/statistics",
+        "my/myTeam/myTeam",
+        "my/myWithdrawal/myWithdrawal",
+        "my/myRecords/myRecords",
+        "my/management/management",
+        "my/invoice/invoice",
+        "my/invoiceDetails/invoiceDetails",
+        "my/myService/myService",
+        "my/afterSalesDetails/afterSalesDetails",
+        "my/MyDrinkingWater/MyDrinkingWater",
+        "my/lnviteFriends/lnviteFriends",
+        "my/lnviteFriends/faceQRScanning",
+        "my/feedback/feedback",
+        "my/customerServiceCenter/customerServiceCenter",
+        "my/personFile/personFile",
+        "my/contractManagement/contractManagement",
+        "my/contractManagement/contractDetails",
+        "my/contractManagement/electronicSignature",
+        "my/contractManagement/reviewRejection",
+        "my/waterQualityMonitoring/waterQualityMonitoring",
+        "my/applyForInvoice/applyForInvoice",
+        "my/balance/balance",
+        "my/withdrawal/withdrawal",
+        "my/addBankCard/addBankCard",
+        "my/myPoints/myPoints",
+        "my/pointsDetails/pointsDetails",
+        "my/coupon/coupon",
+        "mall/productDetails/productDetails",
+        "mall/cart/cart",
+        "device/devicedetails/increaseDevice",
+        "my/contractManagement/contractData",
+        "my/enrollment/agreement",
+        "productionBinding/productionBinding",
+        "prdouctQr/prdouctQr"
+      ],
+      "name": "subpackageA"
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#007AFF",
+    "fontSize": "20rpx",
+    "color": "#AFB1B2",
+    "list": [
+      {
+        "iconPath": "static/image/shouye.png",
+        "selectedIconPath": "static/image/selectedshouye.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/image/shebei.png",
+        "selectedIconPath": "static/image/selectshebei.png",
+        "pagePath": "pages/device/device",
+        "text": "设备"
+      },
+      {
+        "iconPath": "static/image/shangcheng.png",
+        "selectedIconPath": "static/image/selectedshangcheng.png",
+        "pagePath": "pages/mall/mall",
+        "text": "商城"
+      },
+      {
+        "iconPath": "static/image/wode.png",
+        "selectedIconPath": "static/image/selectedwode.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/home/home": {
+      "network": "all",
+      "packages": [
+        "subpackageA"
+      ]
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}

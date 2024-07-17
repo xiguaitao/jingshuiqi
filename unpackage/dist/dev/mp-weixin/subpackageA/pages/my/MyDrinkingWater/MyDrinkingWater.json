@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的饮水",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "subsection": "/components/subsection/subsection",
+    "uni-data-select": "/uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
+    "data-text": "/components/dataText/dataText"
+  }
+}

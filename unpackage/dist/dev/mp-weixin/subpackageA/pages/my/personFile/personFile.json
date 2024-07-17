@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "一人一档",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito"
+  }
+}

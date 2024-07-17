@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "邀请好友",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon"
+  }
+}

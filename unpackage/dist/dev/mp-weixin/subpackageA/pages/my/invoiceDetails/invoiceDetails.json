@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发票详情",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito"
+  }
+}

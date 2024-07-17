@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "退款详情",
+  "navigationBarBackgroundColor": "#FFF",
+  "usingComponents": {
+    "u-steps": "/uni_modules/uview-ui/components/u-steps/u-steps",
+    "u-steps-item": "/uni_modules/uview-ui/components/u-steps-item/u-steps-item",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x"
+  }
+}

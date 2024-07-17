@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "生产绑定",
+  "usingComponents": {
+    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x"
+  }
+}

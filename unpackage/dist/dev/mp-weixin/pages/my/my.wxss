@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.box.data-v-0be17cc6 {
+  min-height: 100vh;
+  background-color: #F0F3F5;
+  padding: 0 32rpx 32rpx;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.lan.data-v-0be17cc6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 360rpx;
+  height: 360rpx;
+  background: rgba(29, 172, 242, 0.5);
+  border-radius: 0rpx 0rpx 0rpx 0rpx;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  z-index: 1;
+}
+.tito.data-v-0be17cc6 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.tito .image image.data-v-0be17cc6 {
+  width: 48rpx;
+  height: 48rpx;
+  vertical-align: middle;
+}
+.tito .text.data-v-0be17cc6 {
+  font-size: 28rpx;
+  color: #14181A;
+}
+.tito .icon.data-v-0be17cc6 {
+  position: relative;
+}
+.tito .icon .transition.data-v-0be17cc6 {
+  -webkit-transform: translate(50%, 105%);
+          transform: translate(50%, 105%);
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  z-index: 99;
+}
+.tito .icon .transition .icon-down.data-v-0be17cc6 {
+  width: 396rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+.tito .icon .transition .icon-down .image-text-phone-icon.data-v-0be17cc6 {
+  display: flex;
+  align-items: center;
+}
+.tito .icon .transition .icon-down .image-text-phone-icon .image image.data-v-0be17cc6 {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.tito .icon .transition .icon-down .image-text-phone-icon .text-phone.data-v-0be17cc6 {
+  margin-left: 24rpx;
+}
+.tito .icon .transition .icon-down .image-text-phone-icon .text-phone .text.data-v-0be17cc6 {
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.tito .icon .transition .icon-down .image-text-phone-icon .text-phone .phone.data-v-0be17cc6 {
+  font-size: 20rpx;
+  color: rgba(255, 255, 255, 0.7);
+}
+.tito .icon .transition .icon-down .image-text-phone-icon .icon.data-v-0be17cc6 {
+  margin-left: auto;
+}
+.toxiang.data-v-0be17cc6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 52rpx;
+}
+.toxiang .image-text-phone-icon.data-v-0be17cc6 {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 32rpx;
+}
+.toxiang .image-text-phone-icon .image image.data-v-0be17cc6 {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+}
+.toxiang .image-text-phone-icon .text-phone.data-v-0be17cc6 {
+  margin-left: 16rpx;
+}
+.toxiang .image-text-phone-icon .text-phone .text.data-v-0be17cc6 {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #14171A;
+}
+.toxiang .image-text-phone-icon .text-phone .phone.data-v-0be17cc6 {
+  font-size: 24rpx;
+  color: #2E3033;
+  margin-top: 16rpx;
+}
+.toxiang .image-text-phone-icon .icon.data-v-0be17cc6 {
+  margin-left: auto;
+}
+.toxiang .image-text-phone-icon .icon image.data-v-0be17cc6 {
+  width: 48rpx;
+  height: 48rpx;
+}
+.kaPian.data-v-0be17cc6 {
+  position: relative;
+  width: 100%;
+  height: 160rpx;
+}
+.kaPian .kaPian-bnt.data-v-0be17cc6 {
+  position: absolute;
+  bottom: -15%;
+  left: 3%;
+  width: 94%;
+  height: 60rpx;
+  margin: 0 32rpx;
+  background: rgba(89, 134, 178, 0.5);
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+.kaPian image.data-v-0be17cc6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+.kaPian .money-number-balance.data-v-0be17cc6 {
+  position: relative;
+  height: 100%;
+  padding: 24rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.kaPian .money-number-balance .number-balance.data-v-0be17cc6 {
+  text-align: center;
+}
+.kaPian .money-number-balance .number-balance .number.data-v-0be17cc6 {
+  font-weight: 600;
+  font-size: 44rpx;
+  color: #FFFFFF;
+}
+.kaPian .money-number-balance .number-balance .balance.data-v-0be17cc6 {
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 0.7);
+}
+.myOrder-allOrders.data-v-0be17cc6 {
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 64rpx 0 0 0;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.myOrder-allOrders .text-myOrder-allOrders.data-v-0be17cc6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.myOrder-allOrders .text-myOrder-allOrders .myOrder.data-v-0be17cc6 {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #14171A;
+}
+.myOrder-allOrders .text-myOrder-allOrders .allOrders.data-v-0be17cc6 {
+  font-size: 24rpx;
+  color: #B1B2B2;
+  display: flex;
+  align-items: center;
+}
+.myOrder-allOrders .list-text.data-v-0be17cc6 {
+  text-align: center;
+  display: flex;
+  margin-top: 24rpx;
+  flex-wrap: wrap;
+}
+.myOrder-allOrders .list-text .image-text.data-v-0be17cc6:nth-child(n + 5) {
+  margin-top: 24rpx;
+}
+.myOrder-allOrders .list-text .image-text.data-v-0be17cc6 {
+  width: 25%;
+}
+.myOrder-allOrders .list-text .image-text .image.data-v-0be17cc6 {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 0rpx 0rpx 0rpx 0rpx;
+}
+.myOrder-allOrders .list-text .image-text .text.data-v-0be17cc6 {
+  font-size: 24rpx;
+  color: #303332;
+}
+.orders.data-v-0be17cc6 {
+  margin-top: 24rpx;
+}
+.merchantTools.data-v-0be17cc6 {
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.merchantTools .tools.data-v-0be17cc6 {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #14171A;
+  margin-bottom: 32rpx;
+}
+.merchantTools .metchantList .image-text-icon.data-v-0be17cc6:first-child {
+  margin-top: 0rpx;
+}
+.merchantTools .metchantList .image-text-icon.data-v-0be17cc6:last-child {
+  border-bottom: none;
+}
+.merchantTools .metchantList .image-text-icon.data-v-0be17cc6 {
+  display: flex;
+  align-items: center;
+  height: 72rpx;
+  margin-top: 24rpx;
+  border-bottom: 2rpx solid #F1F2F2;
+}
+.merchantTools .metchantList .image-text-icon .image image.data-v-0be17cc6 {
+  width: 48rpx;
+  height: 48rpx;
+  vertical-align: middle;
+}
+.merchantTools .metchantList .image-text-icon .text.data-v-0be17cc6 {
+  font-size: 28rpx;
+  color: #2E3033;
+  margin-left: 16rpx;
+}
+.merchantTools .metchantList .image-text-icon .icon.data-v-0be17cc6 {
+  margin-left: auto;
+}
+.overlay.data-v-0be17cc6 {
+  position: absolute;
+  left: 60rpx;
+  top: 125rpx;
+  z-index: 10071;
+}
+.overlay .warp.data-v-0be17cc6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.overlay .rect.data-v-0be17cc6 {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+}
+

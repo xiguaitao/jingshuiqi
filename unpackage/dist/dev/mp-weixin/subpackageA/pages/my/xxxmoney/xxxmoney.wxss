@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.box {
+  min-height: 100vh;
+  background: #F3F5F6;
+  padding: 32rpx 30rpx;
+  box-sizing: border-box;
+}
+.deliveryOfGoods {
+  height: 130rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.deliveryOfGoods .image {
+  margin-right: 16rpx;
+}
+.deliveryOfGoods .image image {
+  width: 48rpx;
+  height: 48rpx;
+  vertical-align: middle;
+}
+.deliveryOfGoods .text-time .text {
+  font-size: 28rpx;
+  color: #2590FA;
+}
+.deliveryOfGoods .text-time .time {
+  font-size: 24rpx;
+  color: #616366;
+  margin-top: 8rpx;
+}
+.deliveryOfGoods .icon {
+  margin-left: auto;
+}
+.popur {
+  width: 552rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  padding: 48rpx;
+  box-sizing: border-box;
+}
+.popur .delete {
+  font-size: 28rpx;
+  color: #14171A;
+  text-align: center;
+}
+.popur .cance-sbmer {
+  display: flex;
+  justify-content: center;
+  margin-top: 64rpx;
+}
+.popur .cance-sbmer .cance {
+  width: 216rpx;
+  height: 64rpx;
+  border-radius: 100rpx 100rpx 100rpx 100rpx;
+  font-size: 28rpx;
+  color: #14171A;
+  line-height: 64rpx;
+  text-align: center;
+  border: 2rpx solid #B5B6B6;
+}
+.popur .cance-sbmer .sbmer {
+  background: #2590FA;
+  border: none;
+  margin-left: 24rpx;
+  color: #FFF;
+}
+.tito {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 62rpx;
+}
+.tito .text {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #14171A;
+  margin-left: calc(50% - 30rpx);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.image-text {
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.image-text .image {
+  margin-right: 8rpx;
+}
+.image-text .image image {
+  width: 52rpx;
+  height: 52rpx;
+  vertical-align: middle;
+}
+.image-text .text {
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #2E3033;
+}
+.text-name-porn-icon {
+  background: #FFFFFF;
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  display: flex;
+  padding: 24rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.text-name-porn-icon .text-name-porn {
+  margin-left: 8rpx;
+}
+.text-name-porn-icon .text-name-porn .text {
+  font-size: 28rpx;
+  color: #14171A;
+}
+.text-name-porn-icon .text-name-porn .name-porn {
+  font-size: 24rpx;
+  color: #2E3033;
+  margin-top: 16rpx;
+}
+.text-name-porn-icon .text-name-porn .name-porn .name {
+  margin-right: 16rpx;
+}
+.commodity {
+  margin-top: 24rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.commodity .image image {
+  width: 168rpx;
+  height: 168rpx;
+}
+.commodity .name-text {
+  margin-left: 16rpx;
+}
+.commodity .name-text .name {
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #2E3033;
+  margin-top: 16rpx;
+}
+.commodity .name-text .text {
+  font-size: 24rpx;
+  color: #616366;
+  margin-top: 16rpx;
+}
+.commodity .name-text .money {
+  color: #FA6B05;
+  margin-top: 16rpx;
+}
+.commodity .name-text .money .money-icon {
+  font-size: 24rpx;
+}
+.commodity .name-text .money .moneyMonth {
+  font-size: 32rpx;
+}
+.commodity .name-text .money .moneyText {
+  font-size: 20rpx;
+  color: #616366;
+}
+.commodity .xNumder {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.commodity .xNumder .xtwo {
+  font-size: 28rpx;
+  color: #616366;
+}
+.commodity .xNumder .afterSales {
+  margin-top: auto;
+  width: 192rpx;
+  height: 64rpx;
+  border-radius: 100rpx;
+  border: 2rpx solid #C1C2C2;
+  text-align: center;
+  line-height: 64rpx;
+  font-size: 28rpx;
+  color: #14171A;
+}
+.coupons {
+  background: #FFFFFF;
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  margin-top: 24rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.coupons .coupons-text:first-child {
+  margin-top: 0rpx;
+}
+.coupons .coupons-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+.coupons .coupons-text .text {
+  font-size: 28rpx;
+  color: #2E3033;
+}
+.coupons .coupons-text .icons {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #14171A;
+}
+.coupons .coupons-text .icons .number {
+  color: #616366;
+}
+.coupons .coupons-text .icons .cop {
+  width: 72rpx;
+  height: 36rpx;
+  background: #F4F5F6;
+  border-radius: 100rpx 100rpx 100rpx 100rpx;
+  font-size: 20rpx;
+  color: #2E3033;
+  line-height: 36rpx;
+  text-align: center;
+  margin-left: 16rpx;
+}
+.coupons .coupons-text .money {
+  color: #FA6B05;
+}
+.coupons .coupons-text .time {
+  color: #616366;
+}
+

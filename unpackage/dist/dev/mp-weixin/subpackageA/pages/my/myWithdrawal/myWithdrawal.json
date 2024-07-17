@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "我的提现",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "subsection": "/components/subsection/subsection",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-transition": "/uni_modules/uview-ui/components/u-transition/u-transition",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore",
+    "u-datetime-picker": "/uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker",
+    "device-list": "/subpackageA/pages/my/myWithdrawal/deviceList"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情列表",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito"
+  }
+}

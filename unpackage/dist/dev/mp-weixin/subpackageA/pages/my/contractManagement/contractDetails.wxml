@@ -1,0 +1,1 @@
+<view class="box"><view class="dcontract"><block wx:if="{{status&&pdf&&contractRecordId&&pdfXcx}}"><view><web-view style="height:100%;" src="{{pdfXcx+'?myParam='+status+'&url='+pdf+'&contractRecordId='+contractRecordId}}"></web-view></view></block></view></view>

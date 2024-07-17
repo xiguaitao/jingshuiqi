@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-badge": "/uni_modules/uni-badge/components/uni-badge/uni-badge",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-number-box": "/uni_modules/uni-number-box/components/uni-number-box/uni-number-box",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "发票管理",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "subsection": "/components/subsection/subsection",
+    "data-text": "/components/dataText/dataText"
+  }
+}

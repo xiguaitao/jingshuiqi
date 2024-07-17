@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.timeline-x.data-v-596ce008 {
+  display: flex;
+}
+.timeline-x .month.data-v-596ce008 {
+  margin-right: 32rpx;
+}
+.timeline-x .month view.data-v-596ce008:nth-child(1) {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 600;
+  font-size: 44rpx;
+  color: #14181A;
+  line-height: 52rpx;
+}
+.timeline-x .month view.data-v-596ce008:nth-child(2) {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #616466;
+  line-height: 33rpx;
+}
+.timeline-x .timeline.data-v-596ce008 {
+  flex: 1;
+}
+.timeline-x .timeline .content.data-v-596ce008 {
+  display: flex;
+  /* margin-bottom: 64rpx; */
+}
+.timeline-x .timeline .content .line.data-v-596ce008 {
+  width: 26rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 32rpx;
+}
+.timeline-x .timeline .content .line.data-v-596ce008::after {
+  flex: 1;
+  display: block;
+  content: '';
+  width: 0rpx;
+  border-right: 2rpx dashed #1DABF2;
+}
+.timeline-x .timeline .content .line view.data-v-596ce008 {
+  width: 20rpx;
+  height: 20rpx;
+  background: #1DABF2;
+  border: 6rpx solid #C8E9FA;
+  border-radius: 50%;
+}
+.timeline-x .timeline .content:not(:first-child) .line view.data-v-596ce008 {
+  border: 0;
+}
+.timeline-x .timeline .content .content-item.data-v-596ce008 {
+  flex: 1;
+}
+.timeline-x .timeline .content .content-item.data-v-596ce008::after {
+  display: block;
+  content: "";
+  height: 64rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-top.data-v-596ce008 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-top .content-item-top-date.data-v-596ce008 {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #2E3133;
+  line-height: 33rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-top .content-item-top-label.data-v-596ce008 {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 20rpx;
+  color: #AFB1B2;
+  line-height: 23rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-top .content-item-top-label label.data-v-596ce008 {
+  margin-left: 16rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-bottom.data-v-596ce008 {
+  padding: 32rpx;
+  background: #fff;
+  box-shadow: 0rpx 8rpx 16rpx 0rpx rgba(3, 18, 26, 0.05);
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.timeline-x .timeline .content .content-item .content-item-bottom .content-item-bottom-left view.data-v-596ce008:nth-child(1) {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #2E3133;
+  line-height: 33rpx;
+  margin-bottom: 16rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-bottom .content-item-bottom-left view.data-v-596ce008:nth-child(2) {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #AFB1B2;
+  line-height: 33rpx;
+}
+.timeline-x .timeline .content .content-item .content-item-bottom .content-item-bottom-right.data-v-596ce008 {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #1DABF2;
+  line-height: 33rpx;
+}
+

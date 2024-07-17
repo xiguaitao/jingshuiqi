@@ -1,0 +1,1 @@
+<view><tito vue-id="04f03ec3-1" title=" " leftIconShow="{{true}}" bind:__l="__l"></tito><view class="image"><image src="../../static/zhifucg.png" mode></image></view><view class="text">恭喜您，支付成功</view><view data-event-opts="{{[['tap',[['getQs',['$event']]]]]}}" class="btn" bindtap="__e">返回取水页</view></view>

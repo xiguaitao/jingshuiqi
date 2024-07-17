@@ -1,0 +1,1 @@
+<view class="conertList-time data-v-c5700224"><view class="conertList data-v-c5700224"><view class="text-money data-v-c5700224"><view class="text data-v-c5700224">{{''+ServiceType[listData.type]+''}}</view><view class="money data-v-c5700224">{{'+'+listData.money+''}}</view></view><view class="time data-v-c5700224">{{''+listData.createTime+''}}</view></view></view>

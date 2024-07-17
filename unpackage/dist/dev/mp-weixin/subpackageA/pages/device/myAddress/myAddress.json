@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "地址管理",
+  "navigationBarBackgroundColor": "#FFF",
+  "usingComponents": {
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup"
+  }
+}

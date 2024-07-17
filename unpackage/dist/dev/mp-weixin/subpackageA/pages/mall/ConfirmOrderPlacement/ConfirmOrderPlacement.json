@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "确认下单",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#FFF",
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-number-box": "/uni_modules/uni-number-box/components/uni-number-box/uni-number-box",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup"
+  }
+}

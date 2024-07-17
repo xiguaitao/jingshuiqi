@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "合同详情",
+  "navigationBarBackgroundColor": "#FFF",
+  "usingComponents": {
+    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "uni-data-select": "/uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
+    "u-textarea": "/uni_modules/uview-ui/components/u-textarea/u-textarea",
+    "u-picker": "/uni_modules/uview-ui/components/u-picker/u-picker",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x"
+  }
+}

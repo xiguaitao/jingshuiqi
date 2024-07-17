@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "添加设备",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-textarea": "/uni_modules/uview-ui/components/u-textarea/u-textarea",
+    "u-picker": "/uni_modules/uview-ui/components/u-picker/u-picker",
+    "safe-bottom-x": "/components/safe-bottom-x/safe-bottom-x"
+  }
+}

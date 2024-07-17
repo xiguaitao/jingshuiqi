@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "水质监控",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "data-text": "/components/dataText/dataText"
+  }
+}

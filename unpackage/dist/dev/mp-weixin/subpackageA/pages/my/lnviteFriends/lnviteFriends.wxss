@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.box {
+  overflow: auto;
+  background-color: #BBDFFA;
+}
+.deviceBj {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.deviceBj image {
+  width: 100%;
+  height: 500rpx;
+}
+.tito {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 62rpx;
+  position: relative;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+.tito .image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tito .image-text .image image {
+  width: 48rpx;
+  height: 48rpx;
+}
+.tito .image-text .text {
+  font-size: 20rpx;
+  color: #2E3033;
+}
+.tito .textE {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #14171A;
+  margin-left: 50%;
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
+}
+.image-bj {
+  text-align: center;
+  margin-top: 36rpx;
+  position: relative;
+}
+.image-bj image {
+  width: 650rpx;
+  height: 512rpx;
+}
+.btns {
+  background-color: #BBDFFA;
+}
+.btns .invite-face {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 64rpx;
+}
+.btns .invite-face .face {
+  width: 268rpx;
+  height: 72rpx;
+  background: linear-gradient(135deg, #04D9D9 0%, #1DABF2 100%);
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 72rpx;
+}
+.btns .invite-face .invite {
+  background: linear-gradient(135deg, #FA8C3E 0%, #FA573E 100%);
+}
+.btns .buzou {
+  margin: 52rpx auto 0 !important;
+}
+.btns .neiron-steps {
+  width: 690rpx;
+  height: 518rpx;
+  margin: 0 auto 0;
+  position: relative;
+}
+.btns .neiron-steps .images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.btns .neiron-steps .steps {
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #2590FA;
+  position: absolute;
+  left: 40%;
+  top: 7%;
+}
+.btns .neiron-steps .stes {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.btns .neiron-steps .stes image {
+  width: 584rpx;
+  height: 128rpx;
+}
+.btns .neiron-steps .text-text {
+  position: absolute;
+  top: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btns .neiron-steps .text-text .text {
+  width: 25%;
+  font-size: 24rpx;
+  color: #616366;
+}
+.btns .neiron-steps .ends {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 28rpx;
+  color: #FA6B05;
+}
+.btns .neiron-steps .integral-number-text-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.btns .neiron-steps .integral-number-text-button .integral {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #2E3033;
+}
+.btns .neiron-steps .integral-number-text-button .number {
+  font-weight: 600;
+  font-size: 60rpx;
+  color: #FA6B05;
+  margin-top: 16rpx;
+}
+.btns .neiron-steps .integral-number-text-button .text-button {
+  width: 232rpx;
+  height: 72rpx;
+  border-radius: 100rpx;
+  font-size: 28rpx;
+  color: #FA6B05;
+  text-align: center;
+  line-height: 72rpx;
+  border: 2rpx solid #FA6E05;
+  margin: 24rpx auto;
+}
+.btns .neiron-steps .option-openlist {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+.btns .neiron-steps .option-openlist .option {
+  width: 600rpx;
+  height: 72rpx;
+  background: #F4F5F6;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.btns .neiron-steps .option-openlist .option .invite {
+  width: 300rpx;
+  height: 72rpx;
+  background: #2590FA;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.btns .neiron-steps .option-openlist .option .order {
+  width: 300rpx;
+  height: 72rpx;
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  color: #2E3033;
+}
+.btns .neiron-steps .option-openlist .openlist .tite {
+  display: flex;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #616366;
+  margin-top: 22rpx;
+}
+.btns .neiron-steps .option-openlist .openlist .tite .text {
+  font-size: 28rpx;
+  text-align: center;
+  width: 30%;
+}
+.btns .neiron-steps .option-openlist .openlist .list-text {
+  height: 200rpx;
+  /* 设置滚动区域的高度 */
+  overflow-y: auto;
+  /* 添加滚动条 */
+}
+.btns .neiron-steps .option-openlist .openlist .list-text .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24rpx;
+}
+.btns .neiron-steps .option-openlist .openlist .list-text .list .listimage {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+.btns .neiron-steps .option-openlist .openlist .list-text .list .text {
+  width: 30%;
+  font-size: 28rpx;
+  color: #14171A;
+  text-align: center;
+}
+

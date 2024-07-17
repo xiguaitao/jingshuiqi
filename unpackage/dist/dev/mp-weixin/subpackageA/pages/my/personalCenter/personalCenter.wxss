@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.box {
+  min-height: 100vh;
+  background-color: #F0F3F5;
+  padding-bottom: 234rpx;
+  box-sizing: border-box;
+}
+.g-container {
+  position: relative;
+  width: 686rpx;
+  height: 472rpx;
+  background-color: #FFF;
+  border-radius: 12rpx;
+  margin: 160rpx auto;
+}
+.g-container .g-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #FFF;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+.g-container .g-bottom .icon {
+  position: absolute;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 20rpx solid #F0F3F5;
+}
+.g-container .g-bottom .icon image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.g-container .g-bottom .icon::after, .g-container .g-bottom .icon::before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  box-shadow: 2rpx -20rpx 0 0 #F0F3F5;
+}
+.g-container .g-bottom .icon::after {
+  top: 50%;
+  left: -44rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-top-right-radius: 40rpx;
+}
+.g-container .g-bottom .icon:before {
+  top: 50%;
+  right: -44rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-top-left-radius: 40rpx;
+}
+.g-container .text-icon3 {
+  margin-top: 130rpx;
+}
+.g-container .text-icon3 .text-icon:last-child {
+  border-bottom: none;
+}
+.g-container .text-icon3 .text-icon {
+  height: 72rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #F0F3F5;
+  margin-top: 32rpx;
+}
+.g-container .text-icon3 .text-icon .text {
+  font-size: 28rpx;
+  color: #616466;
+}
+.g-container .text-icon3 .text-icon .text-icon-image {
+  display: flex;
+  align-items: center;
+}
+.g-container .text-icon3 .text-icon .text-icon-image .text {
+  font-size: 28rpx;
+  color: #14181A;
+  margin-right: 16rpx;
+}
+.g-container .text-icon3 .text-icon .text-icon-image image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+.bnt {
+  width: 100%;
+  height: 204rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx -4rpx 20rpx -4rpx rgba(100, 101, 102, 0.1);
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  padding: 24rpx 32rpx;
+  box-sizing: border-box;
+}
+.bnt .text {
+  width: 686rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #1DABF2;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  color: #1DABF2;
+}
+.Bluetooth {
+  width: 560rpx;
+  background: linear-gradient(360deg, rgba(212, 231, 250, 0) 0%, #D4E7FA 100%), #FFFFFF;
+  border-radius: 40rpx;
+  padding: 32rpx 48rpx;
+  box-sizing: border-box;
+}
+.Bluetooth .blue {
+  font-size: 32rpx;
+  color: #141A18;
+  text-align: center;
+}
+.Bluetooth .text {
+  margin-top: 32rpx;
+  font-size: 28rpx;
+}
+.Bluetooth .input {
+  padding: 10rpx 0rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #D7D8D8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Bluetooth .refuse-open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48rpx;
+}
+.Bluetooth .refuse-open .refuse {
+  width: 216rpx;
+  height: 72rpx;
+  border-radius: 100rpx 100rpx 100rpx 100rpx;
+  border: 1rpx solid #D4E7FA;
+  line-height: 72rpx;
+  text-align: center;
+}
+.Bluetooth .refuse-open .open {
+  background-color: #D4E7FA;
+  color: #000;
+}
+

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商城",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-swiper-dot": "/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot",
+    "cx-screen": "/components/cx-screen/cx-screen",
+    "data-text": "/components/dataText/dataText",
+    "u-badge": "/uni_modules/uview-ui/components/u-badge/u-badge"
+  }
+}

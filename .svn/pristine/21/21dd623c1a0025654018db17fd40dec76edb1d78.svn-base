@@ -1,0 +1,162 @@
+<template>
+	<view class='enrollment'>
+		<view class="content">
+			<view class="form">
+				<u--form labelPosition="left" :model="inputData" :rules="rules" ref="corporationsData" labelWidth="90"
+					:labelStyle="{ fontSize: '28rpx' }">
+
+					<u-form-item prop="deviceCode" label="设备编号">
+						<view style="background: #F3F5F6;border-radius: 12rpx;">
+							<u-input placeholder="请输入设备编号" border="surround" v-model="inputData.deviceCode">
+								<template slot="suffix">
+									<view class="suffix">
+										<uni-icons type="scan" @tap.stop="scanDevice()"></uni-icons>
+									</view>
+								</template>
+							</u-input>
+						</view>
+					</u-form-item>
+
+					<u-form-item prop="qrCode" label="二维码编号">
+						<view style="background: #F3F5F6;border-radius: 12rpx;">
+							<u-input placeholder="请输入二维码编号" border="surround" v-model="inputData.qrCode">
+								<template slot="suffix">
+									<view class="suffix">
+										<uni-icons type="scan" @tap.stop="scanQrCode()"></uni-icons>
+									</view>
+								</template>
+							</u-input>
+						</view>
+					</u-form-item>
+				</u--form>
+			</view>
+		</view>
+		<view class="bottom-btn">
+			<view class="btn">
+				<view v-if="!loading" @click="submit">立即绑定</view>
+				<view v-else>提交中...</view>
+			</view>
+			<safe-bottom-x></safe-bottom-x>
+		</view>
+	</view>
+</template>
+
+<script>
+export default {
+	data() {
+		return {
+			inputData: {
+				deviceCode: '',
+				qrCode: '',
+				loading: false,
+
+
+			},
+			rules: {
+				'deviceCode': {
+					type: 'string',
+					required: true,
+					message: '设备编号不能为空',
+					trigger: ['blur', 'change']
+				},
+				'qrCode': {
+					type: 'string',
+					required: true,
+					message: '二维码编号不能为空',
+					trigger: ['blur', 'change']
+				},
+			}
+		}
+	},
+	methods: {
+		submit() {
+			this.$refs["corporationsData"].validate().then(res => {
+				this.loading = true;
+
+			}).catch(errors => {
+				this.loading = false;
+				uni.$u.toast('校验失败')
+			})
+		},
+		scanDevice() {
+			uni.scanCode({
+				success: (res) => {
+					console.log('res::: ', res);
+					this.inputData.deviceCode = res.result
+				}
+			})
+		},
+		scanQrCode() {
+			uni.scanCode({
+				success: (res) => {
+					console.log('res::: ', res);
+					this.inputData.qrCode = res.result
+				}
+			})
+		}
+	}
+}
+</script>
+
+<style lang="scss">
+.enrollment {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #EFF2F4;
+
+
+	.content {
+		// flex: 1;
+		overflow: auto;
+		box-shadow: 0rpx 12rpx 28rpx -4rpx rgba(0, 0, 0, 0.1), 0rpx -12rpx 18rpx -14rpx rgba(0, 0, 0, 0.1);
+		margin: 32rpx;
+
+		.button {
+			height: 24px;
+			font-size: 28rpx;
+		}
+
+		.form {
+			padding: 32rpx;
+			box-sizing: border-box;
+			background: #FFFFFF;
+			box-shadow: 0rpx 8rpx 20rpx 0rpx #F0F1F2;
+			border-radius: 24rpx;
+
+
+
+		}
+	}
+
+	.checkbox {
+		margin: 32rpx;
+		display: flex;
+		align-items: center;
+		font-size: 24rpx;
+
+		text {
+			color: #23ADF2;
+		}
+	}
+
+	.bottom-btn {
+		background: #fff;
+		margin-top: auto;
+
+		.btn {
+			padding: 24rpx 30rpx;
+			box-sizing: border-box;
+
+			view {
+				height: 88rpx;
+				background: #2590FA;
+				border-radius: 8rpx;
+				display: grid;
+				place-content: center;
+				color: #fff;
+			}
+		}
+	}
+}
+</style>

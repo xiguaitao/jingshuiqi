@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "客服中心",
+  "navigationBarBackgroundColor": "#3099F2",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-collapse": "/uni_modules/uni-collapse/components/uni-collapse/uni-collapse",
+    "uni-collapse-item": "/uni_modules/uni-collapse/components/uni-collapse-item/uni-collapse-item"
+  }
+}

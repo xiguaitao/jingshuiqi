@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "取水详情",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-navbar": "/uni_modules/uview-ui/components/u-navbar/u-navbar",
+    "u-radio-group": "/uni_modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/uni_modules/uview-ui/components/u-radio/u-radio",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup"
+  }
+}

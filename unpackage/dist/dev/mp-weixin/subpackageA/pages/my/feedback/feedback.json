@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "意见反馈",
+  "navigationBarBackgroundColor": "#FFF",
+  "usingComponents": {
+    "u--textarea": "/uni_modules/uview-ui/components/u--textarea/u--textarea",
+    "upload": "/components/upload/upload",
+    "u--input": "/uni_modules/uview-ui/components/u--input/u--input"
+  }
+}

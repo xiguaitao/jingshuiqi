@@ -1,0 +1,1 @@
+<view><u-subsection vue-id="4f37bae2-1" bgColor="#EBEEF0" activeColor="#1EABF2" inactiveColor="#424547" list="{{list}}" current="{{current}}" mode="button" fontSize="14" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" bind:__l="__l"></u-subsection></view>

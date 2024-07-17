@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.bj-qrsc {
+  width: 690rpx;
+  height: 860rpx;
+  margin: 0 auto;
+  margin-top: 64rpx;
+  position: relative;
+}
+.bj-qrsc .img {
+  position: absolute;
+  width: 690rpx;
+  height: 860rpx;
+}
+.bj-qrsc .qr-text {
+  position: absolute;
+  left: 50%;
+  top: 168rpx;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.bj-qrsc .qr-text .qr image {
+  width: 354rpx;
+  height: 354rpx;
+}
+.bj-qrsc .qr-text .text {
+  font-size: 28rpx;
+  color: #FA6B05;
+  margin-top: 24rpx;
+}
+.buzou {
+  width: 690rpx;
+  height: 88rpx;
+  background: #2590FA;
+  border-radius: 100rpx;
+  position: fixed;
+  bottom: 50rpx;
+  margin: 0 30rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+

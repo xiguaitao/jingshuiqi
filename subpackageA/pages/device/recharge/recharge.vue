@@ -1,0 +1,462 @@
+<template>
+	<view class="box">
+		<tito title="充值" :left-icon-show="true"></tito>
+		<notice title="设备信息" :imageTop="kap1Top" @getmore="getmore($event,item.id)" :showGd="false">
+			<view class="conter-text">
+				<view class="image">
+					<image :src="kap1Btn" mode=""></image>
+				</view>
+				<view class="conter">
+					<view class="deviceId-text">
+						<view class="deviceId">
+							设备编号
+						</view>
+						<view class="text">
+							{{setMealDate.code}}
+						</view>
+					</view>
+					<view class="deviceId-text">
+						<view class="deviceId">
+							设备型号
+						</view>
+						<view class="text">
+							{{setMealDate.modelName}}
+						</view>
+					</view>
+					<view class="deviceId-text">
+						<view class="deviceId">
+							<!-- 剩余余额(元) -->
+							剩余天数(天)
+						</view>
+						<view class="money">
+							{{setMealDate.leftNumber}}
+						</view>
+					</view>
+					<view class="deviceId-text">
+						<view class="deviceId">
+							激活时间
+						</view>
+						<view class="text">
+							{{setMealDate.startTime}}
+						</view>
+					</view>
+					<!-- <view class="deviceId-text">
+						<view class="deviceId">
+							到期时间
+						</view>
+						<view class="text">
+							2025-01-01
+						</view>
+					</view> -->
+				</view>
+			</view>
+		</notice>
+		<view class="tao-can">
+			<view :class="packTaocan == index ? 'pack-taocan' : 'pack-taocans' "
+				v-for="(item,index) in setMealDate.setMealList" :key="index" @click="getTaoCan(item,index)">
+				<view class="pack">
+					{{item.name}}
+				</view>
+				<view class="money">
+					￥{{item.money}}
+				</view>
+			</view>
+		</view>
+		<view class="money-text-bnt">
+			<view class="money-text">
+				{{  setMealDate.setMealList > 0 ?"合计:￥" +  money:'该设备型号未配置套餐'  }}
+			</view>
+			<view class="bnt" @click="onMoneyShow()">
+				设备充值
+			</view>
+		</view>
+		<u-popup :show="moneyShow" @close="close" mode="center" :round="10" :safeAreaInsetBottom="false">
+			<view class="popup-center">
+				<view class="center-tito">
+					确认订单
+				</view>
+				<view class="device-code-wo">
+					<view class="device-code">
+						<view class="device">
+							设备编号:
+						</view>
+						<view class="code">
+							{{setMealDate.code}}
+						</view>
+					</view>
+					<view class="device-code">
+						<view class="device">
+							设备型号:
+						</view>
+						<view class="code">
+							{{setMealDate.modelName}}
+						</view>
+					</view>
+					<view class="device-code">
+						<view class="device">
+							套餐名称:
+						</view>
+						<view class="code">
+							{{package.name}}
+						</view>
+					</view>
+					<view class="device-code">
+						<view class="device">
+							支付金额:
+						</view>
+						<view class="money">
+							￥{{money}}
+						</view>
+					</view>
+				</view>
+				<view class="bnt">
+					<view class="text" @click="moneyShow = false">
+						取消
+					</view>
+					<view class="parn" @click="getpayment">
+						确认支付
+					</view>
+				</view>
+			</view>
+		</u-popup>
+	</view>
+</template>
+
+<script>
+	import {
+		setMealList,
+		rechargeLogSave
+	} from "@/api/api.js"
+	export default {
+		data() {
+			return {
+				kap1Top: require("@/static/image/kap1-top.png"),
+				kap1Btn: require("@/static/image/kap1-btn.png"),
+				packTaocan: 0,
+				moneyShow: false,
+				packageList: 0,
+				paymentId: '2',
+				productId: "",
+				setMealDate: {}, //套餐列表
+				money: '', //套餐价格
+				package: {}, //套餐信息
+			};
+		},
+		onLoad(ope) {
+			if (ope.productId) {
+				this.productId = ope.productId
+			}
+			this.setMealList()
+		},
+		methods: {
+			onMoneyShow(){
+				if(this.package && this.package.name){
+					this.moneyShow = true
+					
+				} else {
+					uni.showToast({
+						title:'请选择套餐',
+						icon:'none'
+					})
+				}
+			},
+			//套餐列表
+			async setMealList() {
+				let res = await setMealList({
+					productId: this.productId
+				})
+				if (res.data) {
+					console.log(res, '----套餐列表----');
+					this.setMealDate = res.data
+					if(res.data.setMealList.length > 0){
+						this.money = res.data.setMealList[0].money
+						this.package = res.data.setMealList[0] 
+					} else {
+						this.package = null
+					}
+					
+				}
+			},
+			clickLeft() {
+				uni.navigateBack()
+			},
+			//套餐选择
+			getTaoCan(e, inx) {
+				this.money = e.money
+				this.package = e
+				this.packTaocan = inx
+			},
+			//选择支付方式
+			handleCheckboxChange(event) {
+				const checkedId = event.detail.value[0];
+				this.paymentId = checkedId;
+			},
+			//支付
+			async getpayment() {
+				let data = {
+					setMealId: this.package.id, //套餐id
+					productId: this.productId, //设备id
+					type: this.paymentId, //支付方式: 1-支付宝, 2-微信, 3-余额
+					openId: uni.getStorageSync("openId").openid
+				}
+				await rechargeLogSave(data).then(res => {
+					console.log(res, '充值保存');
+					//pay false 不需要支付  true 需要支付
+					if (res.data && !res.data.pay) {
+						uni.showToast({
+							title: "充值成功",
+							icon: "none"
+						})
+						setTimeout(() => {
+							uni.$emit("getcbk")
+							uni.navigateBack()
+						}, 1500)
+					} else {
+						uni.requestPayment({
+							provider: "wxpay",
+							nonceStr: res.data.noncestr,
+							package: res.data.packages,
+							signType: res.data.signType,
+							paySign: res.data.sign,
+							timeStamp: res.data.timestamp,
+							success: res => {
+								uni.showToast({
+									title: '支付成功',
+									icon: 'none'
+								})
+								setTimeout(() => {
+									uni.reLaunch({
+										url: "/pages/device/device"
+									})
+								}, 1000);
+							},
+							fail: function(err) {
+								console.log('支付失败:' + JSON.stringify(err));
+							}
+						})
+					}
+
+				})
+
+			},
+		}
+	}
+</script>
+
+<style lang="scss">
+	.box {
+		min-height: 100vh;
+		background-color: #F0F3F5;
+	}
+
+	.conter-text {
+		background-color: #FFFFFF;
+		position: relative;
+		padding: 0 10rpx 10rpx 10rpx;
+		box-sizing: border-box;
+
+		.image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: -2rpx;
+
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.conter {
+			padding: 24rpx;
+			box-sizing: border-box;
+			position: relative;
+			background-color: #FFF;
+
+			.deviceId-text:first-child {
+				margin-top: 0rpx;
+			}
+
+			.deviceId-text {
+				display: flex;
+				align-items: center;
+				font-size: 28rpx;
+				margin-top: 32rpx;
+
+				.deviceId {
+					color: #616466;
+				}
+
+				.text {
+					color: #14181A;
+					margin-left: 24rpx;
+				}
+
+				.money {
+					color: #FA573E;
+					margin-left: 24rpx;
+				}
+			}
+		}
+
+	}
+
+	.tao-can {
+		margin-top: 48rpx;
+		display: flex;
+		align-items: center;
+		padding: 0 32rpx;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+		grid-gap: 50rpx;
+
+		.pack-taocan {
+			width: 192rpx;
+			height: 146rpx;
+			background: #EDF6FA;
+			box-shadow: 8rpx 8rpx 8rpx 0rpx #7DA1B2,
+				-8rpx -8rpx 8rpx 0rpx #FAFDFF,
+				inset 4rpx 8rpx 20rpx 0rpx rgba(125, 161, 178, 0.3),
+				inset -4rpx -8rpx 20rpx 0rpx #FAFDFF;
+			border-radius: 8rpx;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.pack {
+				font-size: 28rpx;
+				color: #1DABF2;
+			}
+
+			.money {
+				margin-top: 8rpx;
+				font-size: 30rpx;
+				color: #1DABF2;
+			}
+		}
+
+		.pack-taocans {
+			width: 192rpx;
+			height: 146rpx;
+			background: #F0F3F5;
+			box-shadow: inset -12rpx -12rpx 12rpx 0rpx #FAFDFF, inset 12rpx 12rpx 12rpx 0rpx #C8CBCC;
+			border-radius: 8rpx;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.pack {
+				font-size: 28rpx;
+				color: #2E3133;
+			}
+
+			.money {
+				margin-top: 8rpx;
+				font-size: 30rpx;
+				color: #2E3133;
+			}
+		}
+	}
+
+	.money-text-bnt {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 24rpx 32rpx;
+		box-sizing: border-box;
+		width: 100%;
+		height: 166rpx;
+		background: #FFFFFF;
+		box-shadow: 0rpx -4rpx 20rpx -4rpx rgba(100, 101, 102, 0.1);
+		position: fixed;
+		bottom: 0%;
+		left: 0%;
+
+		.money-text {
+			font-size: 28rpx;
+			color: #FA573E;
+		}
+
+		.bnt {
+			width: 296rpx;
+			height: 88rpx;
+			background: linear-gradient(135deg, #FA8C3E 0%, #FA573E 100%);
+			border-radius: 8rpx;
+			font-size: 32rpx;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 88rpx;
+		}
+	}
+
+	.popup-center {
+		width: 552rpx;
+		height: 472rpx;
+		background: #FFFFFF;
+		border-radius: 8rpx;
+
+		.center-tito {
+			margin-top: 48rpx;
+			text-align: center;
+			font-weight: 700;
+			font-size: 32rpx;
+			color: #14181A;
+			margin-bottom: 32rpx;
+		}
+
+		.device-code-wo {
+			padding: 0 98rpx;
+			box-sizing: border-box;
+
+			.device-code {
+				font-size: 28rpx;
+				display: flex;
+				align-items: center;
+				margin-top: 16rpx;
+
+				.device {
+					color: #616466;
+				}
+
+				.code {
+					color: #14181A;
+					margin-left: 24rpx;
+				}
+
+				.money {
+					color: #FA573E;
+					margin-left: 24rpx;
+				}
+			}
+		}
+
+		.bnt {
+			display: flex;
+			height: 92rpx;
+			font-size: 32rpx;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 55rpx;
+			border-top: 2rpx solid #E1E4E6;
+
+			.text {
+				color: #14181A;
+				flex: 1;
+				height: 100%;
+				text-align: center;
+				line-height: 92rpx;
+			}
+
+			.parn {
+				color: #1DABF2;
+				flex: 1;
+				height: 100%;
+				text-align: center;
+				line-height: 92rpx;
+			}
+		}
+	}
+</style>

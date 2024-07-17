@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "面对面扫码",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito"
+  }
+}

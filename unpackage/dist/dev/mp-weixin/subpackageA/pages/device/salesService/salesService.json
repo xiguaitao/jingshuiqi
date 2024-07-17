@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "申请售后",
+  "navigationBarBackgroundColor": "#FFF",
+  "usingComponents": {
+    "u-radio-group": "/uni_modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/uni_modules/uview-ui/components/u-radio/u-radio",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "upload": "/components/upload/upload"
+  }
+}

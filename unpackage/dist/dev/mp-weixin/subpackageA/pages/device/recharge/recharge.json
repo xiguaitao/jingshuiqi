@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "充值",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tito": "/components/tito/tito",
+    "notice": "/components/notice/notice",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup"
+  }
+}
